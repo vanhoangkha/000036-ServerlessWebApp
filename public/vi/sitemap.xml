@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>/vi/1-setup-guide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/1-setup-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/1-setup-guide/"
+                />
+  </url><url>
+    <loc>/vi/2-static-web-hosting/1-overview/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-static-web-hosting/1-overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-static-web-hosting/1-overview/"
+                />
+  </url><url>
+    <loc>/vi/3-user-management/1-overview/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-user-management/1-overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-user-management/1-overview/"
+                />
+  </url><url>
+    <loc>/vi/4-serverless-backend/1-create-dynamodb-table/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-serverless-backend/1-create-dynamodb-table/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-serverless-backend/1-create-dynamodb-table/"
+                />
+  </url><url>
+    <loc>/vi/5-restful-apis/1-create-rest-api/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/5-restful-apis/1-create-rest-api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/5-restful-apis/1-create-rest-api/"
+                />
+  </url><url>
     <loc>/vi/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,324 +73,199 @@
                 hreflang="vi"
                 href="/vi/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/setup-guide/</loc>
-    <lastmod>2020-04-18T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>/vi/2-static-web-hosting/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/setup-guide/"
+                href="/2-static-web-hosting/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/setup-guide/"
+                href="/vi/2-static-web-hosting/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/1.static-web-hosting/</loc>
-    <lastmod>2020-04-18T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>/vi/2-static-web-hosting/2-creategitrepo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1.static-web-hosting/"
+                href="/2-static-web-hosting/2-creategitrepo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1.static-web-hosting/"
+                href="/vi/2-static-web-hosting/2-creategitrepo/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/2.user-management/</loc>
-    <lastmod>2020-04-18T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>/vi/4-serverless-backend/2-create-iam-role/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2.user-management/"
+                href="/4-serverless-backend/2-create-iam-role/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2.user-management/"
+                href="/vi/4-serverless-backend/2-create-iam-role/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/3.serverless-backend/</loc>
-    <lastmod>2020-04-18T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>/vi/3-user-management/2-create-user-pool/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3.serverless-backend/"
+                href="/3-user-management/2-create-user-pool/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3.serverless-backend/"
+                href="/vi/3-user-management/2-create-user-pool/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/4.restful-apis/</loc>
-    <lastmod>2020-04-18T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>/vi/5-restful-apis/2-create-user-pools-authorizer/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4.restful-apis/"
+                href="/5-restful-apis/2-create-user-pools-authorizer/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4.restful-apis/"
+                href="/vi/5-restful-apis/2-create-user-pools-authorizer/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/cleanup-guide/</loc>
-    <lastmod>2020-04-18T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>/vi/2-static-web-hosting/3-deploysite/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/cleanup-guide/"
+                href="/2-static-web-hosting/3-deploysite/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/cleanup-guide/"
+                href="/vi/2-static-web-hosting/3-deploysite/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/1.static-web-hosting/1-overview/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/3-user-management/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1.static-web-hosting/1-overview/"
+                href="/3-user-management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1.static-web-hosting/1-overview/"
+                href="/vi/3-user-management/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/2.user-management/1-overview/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/4-serverless-backend/3-create-lambda-function/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2.user-management/1-overview/"
+                href="/4-serverless-backend/3-create-lambda-function/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2.user-management/1-overview/"
+                href="/vi/4-serverless-backend/3-create-lambda-function/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/3.serverless-backend/1-create-dynamodb-table/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/5-restful-apis/3-create-resource-method/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3.serverless-backend/1-create-dynamodb-table/"
+                href="/5-restful-apis/3-create-resource-method/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3.serverless-backend/1-create-dynamodb-table/"
+                href="/vi/5-restful-apis/3-create-resource-method/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/4.restful-apis/1-create-rest-api/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/3-user-management/3-add-client/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4.restful-apis/1-create-rest-api/"
+                href="/3-user-management/3-add-client/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4.restful-apis/1-create-rest-api/"
+                href="/vi/3-user-management/3-add-client/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/1.static-web-hosting/2-create-git-repo/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/3-user-management/4-update-config/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1.static-web-hosting/2-create-git-repo/"
+                href="/3-user-management/4-update-config/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1.static-web-hosting/2-create-git-repo/"
+                href="/vi/3-user-management/4-update-config/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/3.serverless-backend/2-create-iam-role/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/2-static-web-hosting/4-modifysite/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3.serverless-backend/2-create-iam-role/"
+                href="/2-static-web-hosting/4-modifysite/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3.serverless-backend/2-create-iam-role/"
+                href="/vi/2-static-web-hosting/4-modifysite/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/2.user-management/2-create-user-pool/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/5-restful-apis/4-deploy-and-update-config/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2.user-management/2-create-user-pool/"
+                href="/5-restful-apis/4-deploy-and-update-config/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2.user-management/2-create-user-pool/"
+                href="/vi/5-restful-apis/4-deploy-and-update-config/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/4.restful-apis/2-create-user-pools-authorizer/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/4-serverless-backend/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4.restful-apis/2-create-user-pools-authorizer/"
+                href="/4-serverless-backend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4.restful-apis/2-create-user-pools-authorizer/"
+                href="/vi/4-serverless-backend/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/1.static-web-hosting/3-deploysite/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/5-restful-apis/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1.static-web-hosting/3-deploysite/"
+                href="/5-restful-apis/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1.static-web-hosting/3-deploysite/"
+                href="/vi/5-restful-apis/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/2.user-management/3-add-client/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
+  </url><url>
+    <loc>/vi/6-cleanup-guide/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2.user-management/3-add-client/"
+                href="/6-cleanup-guide/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2.user-management/3-add-client/"
+                href="/vi/6-cleanup-guide/"
                 />
-  </url>
-  
-  <url>
-    <loc>/vi/3.serverless-backend/3-create-lambda-function/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/3.serverless-backend/3-create-lambda-function/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/3.serverless-backend/3-create-lambda-function/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/4.restful-apis/3-create-resource-method/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4.restful-apis/3-create-resource-method/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4.restful-apis/3-create-resource-method/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/1.static-web-hosting/4-modifysite/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/1.static-web-hosting/4-modifysite/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/1.static-web-hosting/4-modifysite/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/2.user-management/4-update-config/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2.user-management/4-update-config/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/2.user-management/4-update-config/"
-                />
-  </url>
-  
-  <url>
-    <loc>/vi/4.restful-apis/4-deploy-and-update-config/</loc>
-    <lastmod>2020-04-18T00:39:21+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4.restful-apis/4-deploy-and-update-config/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4.restful-apis/4-deploy-and-update-config/"
-                />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -344,9 +277,7 @@
                 hreflang="vi"
                 href="/vi/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -359,5 +290,4 @@
                 href="/vi/tags/"
                 />
   </url>
-  
 </urlset>
