@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Static Web Hosting on Serverless Web Application</title>
-    <link>/2-static-web-hosting/</link>
-    <description>Recent content in Static Web Hosting on Serverless Web Application</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/2-static-web-hosting/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>

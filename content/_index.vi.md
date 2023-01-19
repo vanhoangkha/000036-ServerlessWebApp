@@ -1,27 +1,23 @@
 ---
-title : "Ứng dụng Web Serverless trên AWS"
+title : "AWS CloudWatch Workshop"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
+# AWS CloudWatch Workshop
 
-# Ứng dụng Web Serverless trên AWS
----  
+#### Tổng quan
 
-#### Tổng quan 
+**Amazon CloudWatch** là dịch vụ theo dõi và quản lý cung cấp dữ liệu và thông tin định hướng hành động cho tài nguyên cơ sở hạ tầng và ứng dụng AWS, ứng dụng lai cũng như ứng dụng tại chỗ. Bạn có thể thu thập và tiếp cận tất cả dữ liệu về hiệu năng và hoạt động dưới hình thức nhật ký và số liệu trong cùng một nền tảng, thay vì theo dõi trong các silo (máy chủ, mạng hoặc cơ sở dữ liệu). CloudWatch cho phép bạn theo dõi toàn diện (ứng dụng, cơ sở hạ tầng và dịch vụ) và tận dụng cảnh báo, nhật ký và dữ liệu sự kiện để tự động hành động và giảm thời gian xử lý trung bình (MTTR). Dịch vụ này giúp bạn giải phóng tài nguyên quan trọng và tập trung vào việc xây dựng các ứng dụng và giá trị doanh nghiệp.
 
-* Trong workshop này, bạn sẽ triển khai một ứng dụng web đơn giản cho phép người dùng yêu cầu các chuyến đi kỳ lân từ đội  Wild Rydes. Ứng dụng sẽ cung cấp cho người dùng giao diện người dùng dựa trên HTML để chỉ ra vị trí họ muốn được chọn và sẽ giao tiếp với phía backend với dịch vụ web RESTful để gửi yêu cầu và gửi một con kỳ lân gần đó. Ứng dụng cũng sẽ cung cấp các phương tiện để người dùng đăng ký dịch vụ và đăng nhập trước khi yêu cầu kỳ lân đến đón.
-* Kiến trúc ứng dụng sử dụng AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, Amazon Cognito và AWS Amplify Console. Amplify Console lưu trữ các tài nguyên web tĩnh bao gồm các files HTML, CSS, JavaScript và hình ảnh được tải trong trình duyệt của người dùng thông qua S3. JavaScript được thực thi trong trình duyệt gửi và nhận dữ liệu từ backend API được xây dựng bằng Lambda và API Gateway. Amazon Cognito cung cấp các chức năng xác thực và quản lý người dùng để bảo mật backend API. Cuối cùng, DynamoDB cung cấp một lớp bền vững, nơi dữ liệu có thể được lưu trữ bởi Lambda Function của API.
-* Xem sơ đồ dưới đây để mô tả kiến ​​trúc hoàn chỉnh.
-* workshop này được chia thành bốn mô-đun. Mỗi mô-đun mô tả một kịch bản về những gì chúng tôi sẽ xây dựng và hướng dẫn từng bước để giúp bạn triển khai kiến ​​trúc và kiểm tra các bước thực hiện của bạn.
-![Wild Rydes architecture](/images/1.staticwebsite/1.1-architect.png?width=90pc)  
+**CloudWatch** cung cấp thông tin định hướng hành động, hỗ trợ việc tối ưu hóa hiệu năng ứng dụng, quản lý sử dụng tài nguyên và hiểu rõ tình trạng hoạt động của toàn hệ thống. CloudWatch hiển thị dữ liệu số liệu và nhật ký chi tiết đến từng giây, duy trì dữ liệu trong 15 tháng (số liệu) và cho phép tính toán trên số liệu. Dịch vụ này cũng giúp bạn phân tích dựa trên dữ liệu cũ nhằm tối ưu hóa chi phí và thu thập thông tin trong thời gian thực góp phần tối ưu hóa ứng dụng và tài nguyên cơ sở hạ tầng. Bạn có thể sử dụng CloudWatch Container Insights để theo dõi, khắc phục sự cố và cảnh báo ứng dụng và vi dịch vụ có trong bộ chứa của bạn. CloudWatch thu thập, tổng hợp và tóm tắt thông tin sử dụng điện toán (như CPU, bộ nhớ, ổ đĩa và dữ liệu mạng) cũng như thông tin chẩn đoán (như lỗi khi khởi động lại bộ chứa) nhằm giúp kỹ sư DevOps cô lập và giải quyết sự cố một cách nhanh chóng. Container Insights cung cấp cho bạn thông tin chi tiết từ các dịch vụ quản lý bộ chứa như Amazon ECS for Kubernetes (EKS), Amazon Elastic Container Service (ECS), AWS Fargate và Kubernetes (k8s) độc lập. 
 
-| Mô-đun | Mô tả |
-| --------------------------- | ----------- |
-| **1. Host Web tĩnh** | Triển khai trang web tĩnh bằng AWS Amplify Console ,tạo kho lưu trữ git (trong CodeCommit hoặc GitHub) và sau đó đẩy code trang web lên. |
-| **2. Quản lý User** | Cấu hình quản lý người dùng cho trang web bằng Amazon Cognito. |
-| **3. Serverless Backend** | Tạo một hàm AWS Lambda lưu dữ liệu vào bảng Amazon DynamoDB. |
-| **4. RESTful APIs**	| Đưa ra chức năng Lambda thông qua Amazon API Gateway dưới dạng RESTful API mà trang web tĩnh có thể gọi. |  
-* Các mô-đun này được dự định sẽ được thực hiện tuần tự..
-* Sau khi bạn hoàn thành workshop, bạn có thể xóa tất cả các tài nguyên đã được tạo bằng cách làm theo hướng dẫn dọn dẹp.
-* ✅Xem lại và làm theo hướng dẫn trong hướng dẫn thiết lập, trong đó bạn sẽ định cấu hình IDE AWS Cloud9 của mình và thiết lập các điều kiện cần thiết như Tài khoản AWS.
+#### Nội dung
+
+1. [Giới thiệu]()
+2. [Các bước chuẩn bị]()
+3. [CloudWatch Metric]()
+4. [CloudWatch Logs]()
+5. [CloudWatch Alarm]()
+6. [CloudWatch Dashboard]()
+7. [Dọn dẹp tài nguyên]()

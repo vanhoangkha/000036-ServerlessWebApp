@@ -18,34 +18,24 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Serverless Web Application"
+title = "Working with SNS"
 weight = 1
 languageName = "English"
 
-
-
-[[Languages.en.menu.shortcuts]]
-
-
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"
-identifier = " AWS Study Group FB"
-url = "https://www.facebook.com/groups/660548818043427/"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "Serverless Web Application"
+title = "Làm việc với SNS"
 weight = 2
 languageName = "Tiếng Việt"
 
-
-
-[[Languages.vi.menu.shortcuts]]
-
-
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"
-identifier = " AWS Study Group FB"
-url = "https://www.facebook.com/groups/660548818043427/"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 

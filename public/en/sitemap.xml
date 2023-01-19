@@ -2,66 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/2-static-web-hosting/1-overview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/2-static-web-hosting/1-overview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2-static-web-hosting/1-overview/"
-                />
-  </url><url>
-    <loc>/5-restful-apis/1-create-rest-api/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/5-restful-apis/1-create-rest-api/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5-restful-apis/1-create-rest-api/"
-                />
-  </url><url>
-    <loc>/4-serverless-backend/1-create-dynamodb-table/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4-serverless-backend/1-create-dynamodb-table/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4-serverless-backend/1-create-dynamodb-table/"
-                />
-  </url><url>
-    <loc>/3-user-management/1-overview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/3-user-management/1-overview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/3-user-management/1-overview/"
-                />
-  </url><url>
-    <loc>/1-setup-guide/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/1-setup-guide/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/1-setup-guide/"
-                />
-  </url><url>
     <loc>/</loc>
     <xhtml:link
                 rel="alternate"
@@ -74,196 +14,172 @@
                 href="/"
                 />
   </url><url>
-    <loc>/2-static-web-hosting/2-creategitrepo/</loc>
+    <loc>/4-cloudwatchlogs/4.1-logs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-static-web-hosting/2-creategitrepo/"
+                href="/vi/4-cloudwatchlogs/4.1-logs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-static-web-hosting/2-creategitrepo/"
+                href="/4-cloudwatchlogs/4.1-logs/"
                 />
   </url><url>
-    <loc>/4-serverless-backend/2-create-iam-role/</loc>
+    <loc>/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-serverless-backend/2-create-iam-role/"
+                href="/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-serverless-backend/2-create-iam-role/"
+                href="/1-introduce/"
                 />
   </url><url>
-    <loc>/3-user-management/2-create-user-pool/</loc>
+    <loc>/3-cloudwatchmetric/3.1-view/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-user-management/2-create-user-pool/"
+                href="/vi/3-cloudwatchmetric/3.1-view/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-user-management/2-create-user-pool/"
+                href="/3-cloudwatchmetric/3.1-view/"
                 />
   </url><url>
-    <loc>/2-static-web-hosting/</loc>
+    <loc>/4-cloudwatchlogs/4.2-loginsights/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-static-web-hosting/"
+                href="/vi/4-cloudwatchlogs/4.2-loginsights/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-static-web-hosting/"
+                href="/4-cloudwatchlogs/4.2-loginsights/"
                 />
   </url><url>
-    <loc>/5-restful-apis/2-create-user-pools-authorizer/</loc>
+    <loc>/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-restful-apis/2-create-user-pools-authorizer/"
+                href="/vi/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-restful-apis/2-create-user-pools-authorizer/"
+                href="/2-prerequiste/"
                 />
   </url><url>
-    <loc>/3-user-management/3-add-client/</loc>
+    <loc>/3-cloudwatchmetric/3.2-search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-user-management/3-add-client/"
+                href="/vi/3-cloudwatchmetric/3.2-search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-user-management/3-add-client/"
+                href="/3-cloudwatchmetric/3.2-search/"
                 />
   </url><url>
-    <loc>/4-serverless-backend/3-create-lambda-function/</loc>
+    <loc>/3-cloudwatchmetric/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-serverless-backend/3-create-lambda-function/"
+                href="/vi/3-cloudwatchmetric/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-serverless-backend/3-create-lambda-function/"
+                href="/3-cloudwatchmetric/"
                 />
   </url><url>
-    <loc>/5-restful-apis/3-create-resource-method/</loc>
+    <loc>/4-cloudwatchlogs/4.3-metricfilter/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-restful-apis/3-create-resource-method/"
+                href="/vi/4-cloudwatchlogs/4.3-metricfilter/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-restful-apis/3-create-resource-method/"
+                href="/4-cloudwatchlogs/4.3-metricfilter/"
                 />
   </url><url>
-    <loc>/2-static-web-hosting/3-deploysite/</loc>
+    <loc>/3-cloudwatchmetric/3.3-math/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-static-web-hosting/3-deploysite/"
+                href="/vi/3-cloudwatchmetric/3.3-math/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-static-web-hosting/3-deploysite/"
+                href="/3-cloudwatchmetric/3.3-math/"
                 />
   </url><url>
-    <loc>/3-user-management/</loc>
+    <loc>/4-cloudwatchlogs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-user-management/"
+                href="/vi/4-cloudwatchlogs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-user-management/"
+                href="/4-cloudwatchlogs/"
                 />
   </url><url>
-    <loc>/5-restful-apis/4-deploy-and-update-config/</loc>
+    <loc>/3-cloudwatchmetric/3.4-dynamic/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-restful-apis/4-deploy-and-update-config/"
+                href="/vi/3-cloudwatchmetric/3.4-dynamic/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-restful-apis/4-deploy-and-update-config/"
+                href="/3-cloudwatchmetric/3.4-dynamic/"
                 />
   </url><url>
-    <loc>/2-static-web-hosting/4-modifysite/</loc>
+    <loc>/5-cloudwatchalarm/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-static-web-hosting/4-modifysite/"
+                href="/vi/5-cloudwatchalarm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-static-web-hosting/4-modifysite/"
+                href="/5-cloudwatchalarm/"
                 />
   </url><url>
-    <loc>/4-serverless-backend/</loc>
+    <loc>/6-cloudwatchdashboard/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-serverless-backend/"
+                href="/vi/6-cloudwatchdashboard/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-serverless-backend/"
+                href="/6-cloudwatchdashboard/"
                 />
   </url><url>
-    <loc>/3-user-management/4-update-config/</loc>
+    <loc>/7-cleanup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-user-management/4-update-config/"
+                href="/vi/7-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-user-management/4-update-config/"
-                />
-  </url><url>
-    <loc>/5-restful-apis/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/5-restful-apis/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5-restful-apis/"
-                />
-  </url><url>
-    <loc>/6-cleanup-guide/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/6-cleanup-guide/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6-cleanup-guide/"
+                href="/7-cleanup/"
                 />
   </url><url>
     <loc>/categories/</loc>

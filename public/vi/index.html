@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.97.3" />
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Ứng dụng Web Serverless trên AWS :: Serverless Web Application</title>
+    <title>AWS CloudWatch Workshop :: Làm việc với SNS</title>
 
     
-    <link href="/css/nucleus.css?1656983919" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1656983919" rel="stylesheet">
-    <link href="/css/hybrid.css?1656983919" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1656983919" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1656983919" rel="stylesheet">
-    <link href="/css/auto-complete.css?1656983919" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1656983919" rel="stylesheet">
-    <link href="/css/theme.css?1656983919" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1656983919" rel="stylesheet">
+    <link href="/css/nucleus.css?1674160289" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1674160289" rel="stylesheet">
+    <link href="/css/hybrid.css?1674160289" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1674160289" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1674160289" rel="stylesheet">
+    <link href="/css/auto-complete.css?1674160289" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1674160289" rel="stylesheet">
+    <link href="/css/theme.css?1674160289" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1674160289" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1656983919" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1674160289" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1656983919"></script>
+    <script src="/js/jquery-3.3.1.min.js?1674160289"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1656983919"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1656983919"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1674160289"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1674160289"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1656983919"></script>
+<script type="text/javascript" src="/js/search.js?1674160289"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-setup-guide/" title="Chuẩn bị" class="dd-item 
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/vi/1-setup-guide/">
-           <b> 1. </b> Chuẩn bị
+      <a href="/vi/1-introduce/">
+           <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,39 @@
  
   
     
-    <li data-nav-id="/vi/2-static-web-hosting/" title="Host Web tĩnh" class="dd-item 
+    <li data-nav-id="/vi/2-prerequiste/" title="Các bước chuẩn bị" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-static-web-hosting/">
-           <b> 2. </b> Host Web tĩnh
+      <a href="/vi/2-prerequiste/">
+           <b> 2. </b> Các bước chuẩn bị
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-cloudwatchmetric/" title="CloudWatch Metric" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/3-cloudwatchmetric/">
+           <b> 3. </b> CloudWatch Metric
           
             <i class="fas fa-check read-icon"></i>
           
@@ -139,13 +165,13 @@
  
   
     
-    <li data-nav-id="/vi/2-static-web-hosting/1-overview/" title="Kiến trúc tổng quan" class="dd-item 
+    <li data-nav-id="/vi/3-cloudwatchmetric/3.1-view/" title="Viewing Metrics" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-static-web-hosting/1-overview/">
-           <b> 2.1 </b> Kiến trúc tổng quan
+      <a href="/vi/3-cloudwatchmetric/3.1-view/">
+           <b> 3.1 </b> Viewing Metrics
           
             <i class="fas fa-check read-icon"></i>
           
@@ -167,13 +193,13 @@
  
   
     
-    <li data-nav-id="/vi/2-static-web-hosting/2-creategitrepo/" title="Tạo Git repository" class="dd-item 
+    <li data-nav-id="/vi/3-cloudwatchmetric/3.2-search/" title="Search expressions" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-static-web-hosting/2-creategitrepo/">
-           <b> 2.2 </b> Tạo Git repository
+      <a href="/vi/3-cloudwatchmetric/3.2-search/">
+           <b> 3.2 </b> Search expressions
           
             <i class="fas fa-check read-icon"></i>
           
@@ -195,13 +221,13 @@
  
   
     
-    <li data-nav-id="/vi/2-static-web-hosting/3-deploysite/" title="Deploy trang web" class="dd-item 
+    <li data-nav-id="/vi/3-cloudwatchmetric/3.3-math/" title="Math expressions" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-static-web-hosting/3-deploysite/">
-           <b> 2.3 </b> Deploy trang web
+      <a href="/vi/3-cloudwatchmetric/3.3-math/">
+           <b> 3.3 </b> Math expressions
           
             <i class="fas fa-check read-icon"></i>
           
@@ -223,13 +249,13 @@
  
   
     
-    <li data-nav-id="/vi/2-static-web-hosting/4-modifysite/" title="Chỉnh sửa trang web" class="dd-item 
+    <li data-nav-id="/vi/3-cloudwatchmetric/3.4-dynamic/" title="Dynamic Labels" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-static-web-hosting/4-modifysite/">
-           <b> 2.4 </b> Chỉnh sửa trang web
+      <a href="/vi/3-cloudwatchmetric/3.4-dynamic/">
+           <b> 3.4 </b> Dynamic Labels
           
             <i class="fas fa-check read-icon"></i>
           
@@ -258,13 +284,13 @@
  
   
     
-    <li data-nav-id="/vi/3-user-management/" title="Quản lý User" class="dd-item 
+    <li data-nav-id="/vi/4-cloudwatchlogs/" title="CloudWatch Logs" class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-user-management/">
-           <b> 3. </b> Quản lý User
+      <a href="/vi/4-cloudwatchlogs/">
+           <b> 4. </b> CloudWatch Logs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -289,13 +315,13 @@
  
   
     
-    <li data-nav-id="/vi/3-user-management/1-overview/" title="Kiến trúc tổng quan" class="dd-item 
+    <li data-nav-id="/vi/4-cloudwatchlogs/4.1-logs/" title="CloudWatch Logs" class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-user-management/1-overview/">
-           <b> 3.1 </b> Kiến trúc tổng quan
+      <a href="/vi/4-cloudwatchlogs/4.1-logs/">
+           <b> 4.1 </b> CloudWatch Logs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -317,13 +343,13 @@
  
   
     
-    <li data-nav-id="/vi/3-user-management/2-create-user-pool/" title="Tạo User Pool" class="dd-item 
+    <li data-nav-id="/vi/4-cloudwatchlogs/4.2-loginsights/" title="CloudWatch Logs Insights" class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-user-management/2-create-user-pool/">
-           <b> 3.2 </b> Tạo User Pool
+      <a href="/vi/4-cloudwatchlogs/4.2-loginsights/">
+           <b> 4.2 </b> CloudWatch Logs Insights
           
             <i class="fas fa-check read-icon"></i>
           
@@ -345,41 +371,13 @@
  
   
     
-    <li data-nav-id="/vi/3-user-management/3-add-client/" title="Thêm Client vào User Pool" class="dd-item 
+    <li data-nav-id="/vi/4-cloudwatchlogs/4.3-metricfilter/" title="CloudWatch Metric Filter" class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-user-management/3-add-client/">
-           <b> 3.3 </b> Thêm Client vào User Pool
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/3-user-management/4-update-config/" title="Cập nhật config.js" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/3-user-management/4-update-config/">
-           <b> 3.4 </b> Cập nhật config.js
+      <a href="/vi/4-cloudwatchlogs/4.3-metricfilter/">
+           <b> 4.3 </b> CloudWatch Metric Filter
           
             <i class="fas fa-check read-icon"></i>
           
@@ -408,114 +406,18 @@
  
   
     
-    <li data-nav-id="/vi/4-serverless-backend/" title="Serverless Backend" class="dd-item 
+    <li data-nav-id="/vi/5-cloudwatchalarm/" title="CloudWatch Alarms" class="dd-item 
         
         
         
         ">
-      <a href="/vi/4-serverless-backend/">
-           <b> 4. </b> Serverless Backend
+      <a href="/vi/5-cloudwatchalarm/">
+           <b> 5. </b> CloudWatch Alarms
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/4-serverless-backend/1-create-dynamodb-table/" title="Tạo bảng DynamoDB" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/4-serverless-backend/1-create-dynamodb-table/">
-           <b> 4.1 </b> Tạo bảng DynamoDB
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/4-serverless-backend/2-create-iam-role/" title="Tạo IAM Role" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/4-serverless-backend/2-create-iam-role/">
-           <b> 4.2 </b> Tạo IAM Role
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/4-serverless-backend/3-create-lambda-function/" title="Tạo Lambda Function" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/4-serverless-backend/3-create-lambda-function/">
-           <b> 4.3 </b> Tạo Lambda Function
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -530,142 +432,18 @@
  
   
     
-    <li data-nav-id="/vi/5-restful-apis/" title="RESTful APIs" class="dd-item 
+    <li data-nav-id="/vi/6-cloudwatchdashboard/" title="CloudWatch Dashboards" class="dd-item 
         
         
         
         ">
-      <a href="/vi/5-restful-apis/">
-           <b> 5. </b> RESTful APIs
+      <a href="/vi/6-cloudwatchdashboard/">
+           <b> 6. </b> CloudWatch Dashboards
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/5-restful-apis/1-create-rest-api/" title="Tạo một REST API mới" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/5-restful-apis/1-create-rest-api/">
-           <b> 5.1 </b> Tạo một REST API mới
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/5-restful-apis/2-create-user-pools-authorizer/" title="User Pool Authorizer" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/5-restful-apis/2-create-user-pools-authorizer/">
-           <b> 5.2 </b> User Pool Authorizer
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/5-restful-apis/3-create-resource-method/" title="Tạo Resource &amp; Method" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/5-restful-apis/3-create-resource-method/">
-           <b> 5.3 </b> Tạo Resource &amp; Method
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/5-restful-apis/4-deploy-and-update-config/" title="DTriển khai &amp; Cập nhật" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/5-restful-apis/4-deploy-and-update-config/">
-           <b> 5.4 </b> DTriển khai &amp; Cập nhật
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -680,13 +458,13 @@
  
   
     
-    <li data-nav-id="/vi/6-cleanup-guide/" title="Dọn dẹp tài nguyên" class="dd-item 
+    <li data-nav-id="/vi/7-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
         
         
         
         ">
-      <a href="/vi/6-cleanup-guide/">
-           <b> 6. </b> Dọn dẹp tài nguyên
+      <a href="/vi/7-cleanup/">
+           <b> 7. </b> Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -708,11 +486,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="vi/"></a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="https://www.facebook.com/groups/660548818043427/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
               </li>
           
         </ul>
@@ -780,7 +554,7 @@
       <left>
     
      <b> Workshop</b> <br>
-    <img src="https://hitwebcounter.com/counter/counter.php?page=8010482&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=8050241&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
      <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
@@ -789,7 +563,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>06-07-2022</font></i>
+        <i><font color=orange>20-01-2023</font></i>
     </left>
     <left>
         <br>
@@ -826,47 +600,20 @@
 </span>
 
  
-<h1 id="ứng-dụng-web-serverless-trên-aws">Ứng dụng Web Serverless trên AWS</h1>
-<hr>
+<h1 id="aws-cloudwatch-workshop">AWS CloudWatch Workshop</h1>
 <h4 id="tổng-quan">Tổng quan</h4>
-<ul>
-<li>Trong workshop này, bạn sẽ triển khai một ứng dụng web đơn giản cho phép người dùng yêu cầu các chuyến đi kỳ lân từ đội  Wild Rydes. Ứng dụng sẽ cung cấp cho người dùng giao diện người dùng dựa trên HTML để chỉ ra vị trí họ muốn được chọn và sẽ giao tiếp với phía backend với dịch vụ web RESTful để gửi yêu cầu và gửi một con kỳ lân gần đó. Ứng dụng cũng sẽ cung cấp các phương tiện để người dùng đăng ký dịch vụ và đăng nhập trước khi yêu cầu kỳ lân đến đón.</li>
-<li>Kiến trúc ứng dụng sử dụng AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, Amazon Cognito và AWS Amplify Console. Amplify Console lưu trữ các tài nguyên web tĩnh bao gồm các files HTML, CSS, JavaScript và hình ảnh được tải trong trình duyệt của người dùng thông qua S3. JavaScript được thực thi trong trình duyệt gửi và nhận dữ liệu từ backend API được xây dựng bằng Lambda và API Gateway. Amazon Cognito cung cấp các chức năng xác thực và quản lý người dùng để bảo mật backend API. Cuối cùng, DynamoDB cung cấp một lớp bền vững, nơi dữ liệu có thể được lưu trữ bởi Lambda Function của API.</li>
-<li>Xem sơ đồ dưới đây để mô tả kiến ​​trúc hoàn chỉnh.</li>
-<li>workshop này được chia thành bốn mô-đun. Mỗi mô-đun mô tả một kịch bản về những gì chúng tôi sẽ xây dựng và hướng dẫn từng bước để giúp bạn triển khai kiến ​​trúc và kiểm tra các bước thực hiện của bạn.
-<img src="/images/1.staticwebsite/1.1-architect.png?width=90pc" alt="Wild Rydes architecture"></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Mô-đun</th>
-<th>Mô tả</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1. Host Web tĩnh</strong></td>
-<td>Triển khai trang web tĩnh bằng AWS Amplify Console ,tạo kho lưu trữ git (trong CodeCommit hoặc GitHub) và sau đó đẩy code trang web lên.</td>
-</tr>
-<tr>
-<td><strong>2. Quản lý User</strong></td>
-<td>Cấu hình quản lý người dùng cho trang web bằng Amazon Cognito.</td>
-</tr>
-<tr>
-<td><strong>3. Serverless Backend</strong></td>
-<td>Tạo một hàm AWS Lambda lưu dữ liệu vào bảng Amazon DynamoDB.</td>
-</tr>
-<tr>
-<td><strong>4. RESTful APIs</strong></td>
-<td>Đưa ra chức năng Lambda thông qua Amazon API Gateway dưới dạng RESTful API mà trang web tĩnh có thể gọi.</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Các mô-đun này được dự định sẽ được thực hiện tuần tự..</li>
-<li>Sau khi bạn hoàn thành workshop, bạn có thể xóa tất cả các tài nguyên đã được tạo bằng cách làm theo hướng dẫn dọn dẹp.</li>
-<li>✅Xem lại và làm theo hướng dẫn trong hướng dẫn thiết lập, trong đó bạn sẽ định cấu hình IDE AWS Cloud9 của mình và thiết lập các điều kiện cần thiết như Tài khoản AWS.</li>
-</ul>
+<p><strong>Amazon CloudWatch</strong> là dịch vụ theo dõi và quản lý cung cấp dữ liệu và thông tin định hướng hành động cho tài nguyên cơ sở hạ tầng và ứng dụng AWS, ứng dụng lai cũng như ứng dụng tại chỗ. Bạn có thể thu thập và tiếp cận tất cả dữ liệu về hiệu năng và hoạt động dưới hình thức nhật ký và số liệu trong cùng một nền tảng, thay vì theo dõi trong các silo (máy chủ, mạng hoặc cơ sở dữ liệu). CloudWatch cho phép bạn theo dõi toàn diện (ứng dụng, cơ sở hạ tầng và dịch vụ) và tận dụng cảnh báo, nhật ký và dữ liệu sự kiện để tự động hành động và giảm thời gian xử lý trung bình (MTTR). Dịch vụ này giúp bạn giải phóng tài nguyên quan trọng và tập trung vào việc xây dựng các ứng dụng và giá trị doanh nghiệp.</p>
+<p><strong>CloudWatch</strong> cung cấp thông tin định hướng hành động, hỗ trợ việc tối ưu hóa hiệu năng ứng dụng, quản lý sử dụng tài nguyên và hiểu rõ tình trạng hoạt động của toàn hệ thống. CloudWatch hiển thị dữ liệu số liệu và nhật ký chi tiết đến từng giây, duy trì dữ liệu trong 15 tháng (số liệu) và cho phép tính toán trên số liệu. Dịch vụ này cũng giúp bạn phân tích dựa trên dữ liệu cũ nhằm tối ưu hóa chi phí và thu thập thông tin trong thời gian thực góp phần tối ưu hóa ứng dụng và tài nguyên cơ sở hạ tầng. Bạn có thể sử dụng CloudWatch Container Insights để theo dõi, khắc phục sự cố và cảnh báo ứng dụng và vi dịch vụ có trong bộ chứa của bạn. CloudWatch thu thập, tổng hợp và tóm tắt thông tin sử dụng điện toán (như CPU, bộ nhớ, ổ đĩa và dữ liệu mạng) cũng như thông tin chẩn đoán (như lỗi khi khởi động lại bộ chứa) nhằm giúp kỹ sư DevOps cô lập và giải quyết sự cố một cách nhanh chóng. Container Insights cung cấp cho bạn thông tin chi tiết từ các dịch vụ quản lý bộ chứa như Amazon ECS for Kubernetes (EKS), Amazon Elastic Container Service (ECS), AWS Fargate và Kubernetes (k8s) độc lập.</p>
+<h4 id="nội-dung">Nội dung</h4>
+<ol>
+<li><a href="">Giới thiệu</a></li>
+<li><a href="">Các bước chuẩn bị</a></li>
+<li><a href="">CloudWatch Metric</a></li>
+<li><a href="">CloudWatch Logs</a></li>
+<li><a href="">CloudWatch Alarm</a></li>
+<li><a href="">CloudWatch Dashboard</a></li>
+<li><a href="">Dọn dẹp tài nguyên</a></li>
+</ol>
 	
   
         
@@ -924,74 +671,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1154,21 +835,6 @@
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -1187,41 +853,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1252,7 +883,7 @@
 	 
 		
 		
-			<a class="nav nav-next" href="/vi/1-setup-guide/" title="Chuẩn bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/1-introduce/" title="Giới thiệu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1262,19 +893,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1656983919"></script>
-    <script src="/js/perfect-scrollbar.min.js?1656983919"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1656983919"></script>
-    <script src="/js/jquery.sticky.js?1656983919"></script>
-    <script src="/js/featherlight.min.js?1656983919"></script>
-    <script src="/js/highlight.pack.js?1656983919"></script>
+    <script src="/js/clipboard.min.js?1674160289"></script>
+    <script src="/js/perfect-scrollbar.min.js?1674160289"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1674160289"></script>
+    <script src="/js/jquery.sticky.js?1674160289"></script>
+    <script src="/js/featherlight.min.js?1674160289"></script>
+    <script src="/js/highlight.pack.js?1674160289"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1656983919"></script>
-    <script src="/js/learn.js?1656983919"></script>
-    <script src="/js/hugo-learn.js?1656983919"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1674160289"></script>
+    <script src="/js/learn.js?1674160289"></script>
+    <script src="/js/hugo-learn.js?1674160289"></script>
 
-    <link href="/mermaid/mermaid.css?1656983919" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1656983919"></script>
+    <link href="/mermaid/mermaid.css?1674160289" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1674160289"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
