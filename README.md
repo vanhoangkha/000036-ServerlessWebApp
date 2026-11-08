@@ -1,4 +1,4 @@
-# ⚡ Serverless Web App
+# Serverless Web App
 
 Build a serverless web application with Lambda, API Gateway, and DynamoDB.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series, designe
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000036-ServerlessWebApp/)**
+**[Start the workshop](https://vanhoangkha.github.io/000036-ServerlessWebApp/)**
 
 ## Prerequisites
 
